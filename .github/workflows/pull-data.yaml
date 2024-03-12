@@ -1,7 +1,8 @@
 name: pull full data w python
 
 on:
-  delete
+  schedule:
+  - cron: '10,25,40,55 * * * *'
 
 jobs:
   get:
