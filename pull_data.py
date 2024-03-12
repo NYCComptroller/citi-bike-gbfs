@@ -1,7 +1,10 @@
-import requests
+from requests import Session
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 import json
+from os import makedirs
+
+makedirs('data', exist_ok=True)
 
 # copying a retry strategy from: https://www.peterbe.com/plog/best-practice-with-retries-with-requests
 def requests_retry_session(
@@ -10,7 +13,7 @@ def requests_retry_session(
     status_forcelist=(500, 502, 504),
     session=None,
 ):
-    session = session or requests.Session()
+    session = session or Session()
     retry = Retry(
         total=retries,
         read=retries,
