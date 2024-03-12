@@ -1,0 +1,36 @@
+name: pull full data w python
+
+on:
+  delete
+
+jobs:
+  get:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: checkout repo content
+      uses: actions/checkout@v3
+
+    - name: install python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: install dependencies
+      run: pip install requests
+
+    - name: fetch data, write timestamp as filename
+      run: python pull_data.py
+
+    - name: commit files
+      run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "pulled data on schedule" --allow-empty)
+
+    - name: push changes
+      uses: ad-m/github-push-action@v0.6.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main 
