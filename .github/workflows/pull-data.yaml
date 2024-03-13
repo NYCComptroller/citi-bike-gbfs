@@ -1,4 +1,4 @@
-name: pull full data w python
+name: pull data
 
 on:
   schedule:
