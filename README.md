@@ -3,7 +3,7 @@ Use this repo to get data from Citi Bike's GBFS real-time data feed and revisit 
 ### 1. Fork this repo
 
 1. Click 'Fork' above 
-![fork_button](img/fork_button.png)
+![fork_kbd](img/fork_kbd.png)
 
 1. optionally, give it a new name
 
@@ -31,11 +31,11 @@ The GitHub Action will fetch and save the GBFS data on the specified schedule. T
 - Click the 'Action' tab
 ![Action tab](img/Action_tab.png)
 
-- Click <button>I understand my workflows, go ahead and enable them</button> to enable workflows from the forked repo
+- Click <kbd>I understand my workflows, go ahead and enable them</kbd> to enable workflows from the forked repo
 
 - on the left, under 'Workflows' click 'pull full data w python'
 
-- Click <button>Enable workflow</button> to enable the workflow
+- Click <kbd>Enable workflow</kbd> to enable the workflow
 
 Now data will be saved in the GitHub repo at [`/data`](/data) and successful data flow runs will be logged on this page.
 
@@ -45,7 +45,7 @@ After you have recorded some data:
 
 Pull the data from GitHub to your local instance.
 
-Then use the Jupyter notebook [`Build dataset`](Build dataset.ipynb). This will combine the data snapshots into a single dataset, indexed by data timestamp and `station_id`, and a companion geojson of station locations indexed by `station_id`
+Then use the Jupyter notebook [`Build dataset`](Build%20dataset.ipynb). This will combine the data snapshots into a single dataset, indexed by data timestamp and `station_id`, and a companion geojson of station locations indexed by `station_id`
 
 ### Example notebooks
 
