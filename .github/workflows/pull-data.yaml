@@ -1,8 +1,7 @@
 name: pull data
 
 on:
-  schedule:
-  - cron: '10,25,40,55 * * * *'
+  delete
 
 jobs:
   get:
