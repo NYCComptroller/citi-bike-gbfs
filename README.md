@@ -3,7 +3,7 @@ Use this repo to get data from Citi Bike's GBFS real-time data feed and revisit 
 ### 1. Fork this repo
 
 1. Click 'Fork' above 
-![fork_kbd](img/fork_kbd.png)
+![fork_button](img/fork_button.png)
 
 1. optionally, give it a new name
 
