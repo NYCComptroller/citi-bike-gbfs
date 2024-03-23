@@ -51,6 +51,11 @@ Then use the Jupyter notebook [`Build dataset`](Build%20dataset.ipynb). This wil
 
 Sample notebooks show the code we used for pieces of this analysis.
 
+You can explore these in Binder:  
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NYCComptroller/citi-bike-gbfs/HEAD)
+
+or run locally. 
+
 1. [Build service measures](Examples/Build%20service%20measures.ipynb) creates the measures of poor service which we used, including frequency and duration stations had no bikes or no docks, and portion of docks which had broken bikes. 
 2. [Compute clusters of poor service](Examples/Compute%20clusters%20of%20poor%20service.ipynb) identifies significant clusters of poor service across each of these service measures, using local indicators of spatial association.
 3. [Get Census data](Examples/Get%20Census%20data.ipynb) and [Compare demographics](Examples/Compare%20demographics.ipynb) load Census geometry and counts through APIs, join Tracts with the Citi Bike service area and clusters of poor service, and aggregates and visualizes the comparison demographics.
