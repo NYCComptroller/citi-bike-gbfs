@@ -64,4 +64,6 @@ or run locally.
 
 ### Python environment
 
-You can [create a conda environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) using the [`environment.yml`](environment.yml) to load the Python packages needed to run these notebooks. 
+You can create an environment using [`requirements.txt`](requirements.txt) with Python version 3.9 to load the Python packages needed to run these notebooks.
+
+~~[create a conda environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) using the [`environment.yml`](environment.yml) to load the Python packages needed to run these notebooks.~~
