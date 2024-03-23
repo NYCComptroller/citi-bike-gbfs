@@ -59,4 +59,4 @@ Sample notebooks show the code we used for pieces of this analysis.
 
 ### Python environment
 
-You can [create a conda environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) using the [`citibike-analysis-environment.yml`](citibike-analysis-environment.yml) to load the Python packages needed to run these notebooks. 
+You can [create a conda environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) using the [`environment.yml`](environment.yml) to load the Python packages needed to run these notebooks. 
